@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    body {
+      background-image: url(bit4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family:Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    } 
+    .login-form {
+      background-color: rgba(240, 248, 255, 0.95); 
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 9px 15px rgba(0, 0, 0, 0.5);
+      text-align: left;
+      padding-right: 40px;
+      width: 300px;
+    }
+    .login-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+    .login-form input[type="submit"] {
+      width: 100%;
+      background-color: chocolate;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .login-form input[type="submit"]:hover {
+      background-color: coral;
+    }
+    .nav-bar{
+      background-color: rgb(255, 255, 255);
+      overflow: hidden;
+      display: flex;
+      justify-content: right;
+      padding: 7px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      float: right;
+    }
+    .nav-bar a{
+      padding: 12px 20px;
+      text-decoration:none;
+      font-size: 16px;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 6px;
+      margin: 0 6px;
+    }
+    .nav-bar a:hover{
+      background-color:chocolate;
+      color: white;
+      transition: background-color 0.2s;
+      transform: translatey(-2px);
+      box-shadow: 1px 3px 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <a href="home.html">Home</a>
+    <a href="LOGIN1.html">Login</a>
+    <a href="Registration.html">Register</a>
+    <a href="contact.html">Contact</a>
+    <a href="more info.html">More Info</a>
+  </div>
+  <div class="login-form">
+    <h2>Login Form</h2>
+    <form action="/login" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" required><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br>
+      <input type="submit" value="Login"><br><br>
+      <a href="Registration.html" style="text-decoration: none;">No Account register here</a>
+    </form>
+  </div>
+</body>
+</html>
